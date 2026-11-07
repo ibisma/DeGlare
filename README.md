@@ -1,5 +1,6 @@
 # DeGlare: Self-Supervised Specular Removal for Industrial Metallic Surfaces via Multi-Illumination Priors
 
+## Dataset Availability: The MIR dataset is coming soon
 
 ## The MIR Dataset Directory layout
 
