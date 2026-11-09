@@ -33,7 +33,7 @@ dataset/
 │   ├── test1/         # 150 input images
 │   └── test2/         # 150 input images
 └── gt/
-    ├── training/      # 0001.png: approximate diffuse label (Weiss estimate) used for training
+    ├── training/      # weiss_train.png: approximate diffuse label (Weiss estimate) used for training
     ├── test1/
     │   ├── gt_test1.png        # ground-truth diffuse reference
     │   └── mask/
