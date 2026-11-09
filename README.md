@@ -2,7 +2,7 @@
 
 ## Dataset Availability
 
-The MIR dataset is available as a [GitHub Release (dataset-v1.0)](https://github.com/ibisma/DeGlare/releases/tag/dataset-v1.0). Images are not stored in the git tree.
+The Multi-Illumination industrial Rig (MIR) dataset is available as a [GitHub Release (dataset-v1.0)](https://github.com/ibisma/DeGlare/releases/tag/dataset-v1.0). Images are not stored in the git tree.
 
 **Quick download** (from the repo root; downloads, verifies the SHA-256 checksum and unpacks into `dataset/`):
 
@@ -19,7 +19,7 @@ shasum -a 256 -c SHA256SUMS
 unzip MIR-dataset-v1.0.zip      # creates ./dataset
 ```
 
-## The MIR Dataset Directory layout
+## The Multi-Illumination industrial Rig (MIR) Dataset Directory layout
 
 Images are numbered sequentially (`0001.jpg`, `0002.jpg`, ...) within each folder.
 
@@ -48,7 +48,7 @@ dataset/
 
 ## License
 
-The MIR dataset is released under
+The Multi-Illumination industrial Rig (MIR) dataset is released under
 [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
 
 
