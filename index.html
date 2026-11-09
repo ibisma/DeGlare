@@ -29,17 +29,31 @@
 
   <p><a class="btn" href="https://github.com/ibisma/DeGlare">View on GitHub</a></p>
 
-  <h2>The MIR Dataset: coming soon</h2>
-  <p>Directory layout:</p>
+  <h2>The MIR Dataset</h2>
+  <p><a class="btn" href="https://github.com/ibisma/DeGlare/releases/tag/dataset-v1.0">Download MIR dataset v1.0</a></p>
+  <p>Or, from a clone of the repository:</p>
+<pre>bash scripts/download_dataset.sh</pre>
+  <p>Directory layout (images are numbered <code>0001.jpg</code>, <code>0002.jpg</code>, &hellip; within each folder):</p>
 <pre>dataset/
-├── training/          # input images — cam0, pos0
+├── training/
+│   └── train-val-split/
+│       ├── train/     # 384 input images
+│       └── val/       # 97 input images
 ├── test/
-│   ├── test1/         # 150 input images — cam1, pos1
-│   └── test2/         # 150 input images — cam2, pos2
-└── gt/                # diffuse references, filenames mirroring the inputs
-    ├── training/      # approximate diffuse labels (Weiss estimate) used for training
-    ├── test1/         # ground-truth diffuse references for evaluation
-    └── test2/</pre>
+│   ├── test1/         # 150 input images
+│   └── test2/         # 150 input images
+└── gt/
+    ├── training/      # 0001.png: approximate diffuse label (Weiss estimate) used for training
+    ├── test1/
+    │   ├── gt_test1.png        # ground-truth diffuse reference
+    │   └── mask/
+    │       ├── mask_img.png    # mask as image
+    │       └── mask_numpy.npy  # mask as NumPy array
+    └── test2/
+        ├── gt_test2.png
+        └── mask/
+            ├── mask_img.png
+            └── mask_numpy.npy</pre>
 
   <h2>License</h2>
   <p>The MIR dataset is released under
